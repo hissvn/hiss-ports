@@ -1,0 +1,6 @@
+-lib hiss
+-cp src
+-D analyzer-optimize
+-D no-deprecation-warnings
+--python main.py
+-main hisspy.Main
