@@ -22,7 +22,6 @@ class Main {
                     fallthroughArgs.push(arg);
             }
         }
-        trace(args);
         CCInterp.run(interp, fallthroughArgs);
     }
 }
