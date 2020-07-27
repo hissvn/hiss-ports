@@ -1,0 +1,3 @@
+(defvar app (new Express))
+(defroute get "/" () (send "Hello world"))
+(Express:listen app 8080 (lambda () (print "Listening on 8080")))

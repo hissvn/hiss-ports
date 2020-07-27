@@ -1,0 +1,22 @@
+{
+  "name": "hiss-js",
+  "version": "0.0.0",
+  "description": "Minimal Lisp for working with NodeJS libraries.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hissvn/hiss-ports.git"
+  },
+  "author": "NQNStudios",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/NQNStudios/hissvn/hiss-ports/issues"
+  },
+  "homepage": "https://github.com/hissvn/hiss-ports/blob/master/js/README.md",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

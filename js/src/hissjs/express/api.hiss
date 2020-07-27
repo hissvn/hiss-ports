@@ -1,0 +1,13 @@
+(register-method "send" _send)
+(defmacro send (value) `(_send _res ,value))
+(defmacro param (name) `(get-property (get-property _req "params") (symbol-name ',name)))
+(defmacro defroute (method route params &rest body)
+    (let (method-sym (symbol "Express:$method")
+        param-bindings (list))
+        (do-for param params
+            (push param-bindings param)
+            (push param-bindings `(param ,param)))
+        `(,method-sym app ,route
+            (lambda (_req _res)
+                (let (,@param-bindings)
+                    ,@body)))))
