@@ -1,0 +1,5 @@
+--library hxnodejs
+--library hiss
+--class-path src
+--main hissjs.Main
+--js index.js

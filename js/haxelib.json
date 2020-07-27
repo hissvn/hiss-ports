@@ -1,0 +1,16 @@
+{
+    "name": "hiss-js",
+    "url": "https://github.com/hissvn/hiss-py",
+    "license": "MIT",
+    "tags": ["cross"],
+    "description": "",
+    "version": "0.0.0",
+    "releasenote": "It isn't safe to use this library yet.",
+    "contributors": ["NQNStudios"],
+    "classPath": "src/",
+    "main": "hissjs.Main",
+    "dependencies": {
+        "hxnodejs": "",
+        "hiss": ""
+    }
+}
