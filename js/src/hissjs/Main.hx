@@ -8,6 +8,7 @@ class Main {
     static function main() {
         var interp = new CCInterp();
         var args = Sys.args();
+        var fallthroughArgs = [];
         while (args.length > 0) {
             var arg = args.shift();
             switch (arg) {
@@ -17,8 +18,11 @@ class Main {
                             interp.importClass(Express, "Express");
                             interp.load("src/hissjs/express/api.hiss");
                     }
+                default:
+                    fallthroughArgs.push(arg);
             }
         }
-        interp.load("src/hissjs/main.hiss");
+        trace(args);
+        CCInterp.run(interp, fallthroughArgs);
     }
 }
