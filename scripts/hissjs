@@ -1,0 +1,3 @@
+#! /bin/bash
+(cd ~/hiss-ports/js && haxe build.hxml)
+node ~/hiss-ports/js/index.js $@
