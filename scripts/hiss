@@ -1,2 +1,2 @@
 #! /bin/bash
-(cd ~/hiss && haxe hxml/run-interp.hxml)
+(cd ~/hiss && haxe hxml/run-interp.hxml $@)
