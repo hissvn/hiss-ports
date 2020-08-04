@@ -1,3 +1,2 @@
 #! /bin/bash
-(cd ~/hiss-ports/python && haxe build.hxml)
-python ~/hiss-ports/python/main.py $@
+(cd ~/hiss-ports/python && haxe build.hxml && python ~/hiss-ports/python/main.py $@)
