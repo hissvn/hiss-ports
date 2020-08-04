@@ -1,6 +1,7 @@
 package hissjs;
 
 import hiss.CCInterp;
+import hiss.StaticFiles;
 
 import hissjs.express.Express;
 
@@ -16,7 +17,8 @@ class Main {
                     switch (args.shift()) {
                         case "express":
                             interp.importClass(Express, "Express");
-                            interp.load("src/hissjs/express/api.hiss");
+                            StaticFiles.compileWith("express/api.hiss");
+                            interp.load("express/api.hiss");
                     }
                 default:
                     fallthroughArgs.push(arg);
