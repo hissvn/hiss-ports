@@ -1,0 +1,2 @@
+#! /bin/bash
+(cd ~/hiss && haxe build-scripts/repl/build-cpp-repl.hxml) && ~/hiss/bin/cpp/CCInterp $@
