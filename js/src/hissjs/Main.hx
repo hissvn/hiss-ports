@@ -16,7 +16,7 @@ class Main {
                 case "-lib":
                     switch (args.shift()) {
                         case "express":
-                            interp.importClass(Express, "Express");
+                            interp.importClass(Express, {name:"Express"});
                             StaticFiles.compileWith("express/api.hiss");
                             interp.load("express/api.hiss");
                     }
